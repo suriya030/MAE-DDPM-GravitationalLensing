@@ -28,20 +28,15 @@ pip install -r requirements.txt
 
 ## **3. Results**
 
-Below is the gif that decribes the generation of image from noise ,
+Below is the gif that decribes the generation of images from noise ,
 
-
-https://github.com/user-attachments/assets/af8056de-bf83-4663-abec-976d4bd4de85
-
-
-<video controls autoplay loop muted>
-  <source src="https://github.com/user-attachments/assets/e39b28f3-13b8-44bd-beb4-de7ee02efd47" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Timestep 1000 to 1 ](./output_gif.gif)
 
 Below is the comparison between the Real Images and Generated Images ,
 
 <img src="https://github.com/user-attachments/assets/8cd5c337-5125-4c2d-8b7a-4d2a2d211553" alt="rAdoKrW" width="600">
+
+## **4. Discussion**
 
 
 
