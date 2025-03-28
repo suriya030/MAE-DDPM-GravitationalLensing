@@ -9,6 +9,7 @@ conda activate ddpm-pytorch
 pip install -r requirements.txt
 ```
 **NOTE** : Compatible versions of CUDA toolkit and CuDNN should be downloaded for GPU support. 
+
 ## **2. Usage**
 ```ddpm-pytorch.ipynb``` contains all the necessary scripts for training, generating new images, and computing FID score. Notebook is organised into multiple SECTIONS as given below:
 
@@ -24,5 +25,26 @@ pip install -r requirements.txt
     
 - For **FID score calculation**: Run **SECTIONS🚨 FILL HERE**  
   **NOTE**: Trained DDPM model Checkpoint should be present at `.\Evaluation-test\Task-IV\default\`, by default I have included my trained DDPM model checkpoint there `ddpm_ckpt.pth`.
+
+## **3. Results**
+
+Below is the gif that decribes the generation of image from noise ,
+
+
+https://github.com/user-attachments/assets/af8056de-bf83-4663-abec-976d4bd4de85
+
+
+<video controls autoplay loop muted>
+  <source src="https://github.com/user-attachments/assets/e39b28f3-13b8-44bd-beb4-de7ee02efd47" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Below is the comparison between the Real Images and Generated Images ,
+
+<img src="https://github.com/user-attachments/assets/8cd5c337-5125-4c2d-8b7a-4d2a2d211553" alt="rAdoKrW" width="600">
+
+
+
+
 
 
