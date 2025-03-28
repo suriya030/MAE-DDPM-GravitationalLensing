@@ -1,6 +1,8 @@
 
 ## **1. Setup**
 
+Run the following commands to clone the repo and, setting up environment in local system.
+
 ```bash
 git clone https://github.com/suriya030/Evaluation-test.git
 cd .\Evaluation-test\Task-IV
