@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 Below is the gif that decribes the generation of images from noise ,
 
-![Timestep 1000 to 1 ](./output_gif.gif)
+![Timestep 1000 to 1 ](./figures/output_gif.gif)
 
 Below is the comparison between the Real Images and Generated Images ,
 
