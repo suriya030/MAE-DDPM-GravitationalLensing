@@ -11,93 +11,66 @@ pip install -r requirements.txt
 ```
 **NOTE** : Compatible versions of CUDA toolkit and CuDNN should be downloaded for GPU support. 
 
+--- 
+
 ### **2. Usage**
 
-#### pre-training MAE
+#### Pre-training MAE
  - ```mae-pretrain.ipynb``` contains the necessary scripts for pre-training MAE ( from scratch ). 
   **Note** : Download the folder named ```dataset``` from the [🚨drive🚨](), and place it at the location ```.\Evaluation-test\Task-VI\.``` .
 
-#### linear-probing MAE
- - ```mae-linearprobe.ipynb``` contains the necessary scripts for linear probing MAE . 
-  **Note** : Download the folder named ```saved_models``` from the [🚨drive🚨](), and place it at the location ```.\Evaluation-test\Task-VI\.``` .
 
-#### finetuning MAE for classification
+#### Finetuning MAE for classification
  - ```Task-VIA\mae-finetune-VIA.ipynb``` conatains the necessary scripts for finetuning MAE for classification on dark matter sub-structure . 
  **Note** : Download the folders named ```dataset``` and ```saved_models``` from the [🚨drive🚨](), and place both of them at location ```.\Evaluation-test\Task-VI\Task-VIA\.``` .
 
-#### finetuning MAE for Super-Resolution
+#### Finetuning MAE for Super-Resolution
  - ```Task-VIB\mae-finetune-VIB.ipynb``` conatains the necessary scripts for finetuning MAE for super-resolution. 
  **Note** : Download the folders named ```dataset``` and ```saved_models``` from, the [🚨drive🚨](), and place both of them at location ```.\Evaluation-test\Task-VI\Task-VIB\.``` .
 
+---
+
 ### **3. Dataset and Implementation**
-- It has been discussed in the respective notebooks.
+- For Pre-training MAE we have used 80-20 train-validation split of no substructure images .
+- For Finetuning MAE-Encoder for classification of dark-matter substructure we used train-val-test split of 70-10-20.
+  
+   
+
+---
 
 ### **4. Results**
 
-**Pre-training results**
 
-Loss curve obtained during pre-training MAE and, linearprobing accuracy which is used to evaluvate the learned representations are shown below,
+**Pre-training Results**
 
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <!-- Image Section -->
-  <div style="margin-right: 20px;">
-    <img src="./figures/loss_curve.png" alt="Loss Curve" width="300">
-  </div>
-
-  <!-- Table Section -->
-  <div>
-    <table>
-      <thead>
-        <tr>
-          <th>Model</th>
-          <th style="text-align: right;">Linear Probing Accuracy (%)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>example1</td>
-          <td style="text-align: right;">76.3</td>
-        </tr>
-        <tr>
-          <td>example2</td>
-          <td style="text-align: right;">78.5</td>
-        </tr>
-        <tr>
-          <td>example3</td>
-          <td style="text-align: right;">74.2</td>
-        </tr>
-        <tr>
-          <td>example4</td>
-          <td style="text-align: right;">75.0</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-We've set up a side-by-side comparison to show how our model rebuilds an image using its learned representations. On the left, you'll see the original image, and on the right is the model's reconstructed version, and in the middle is the masked original image.
+The loss curve obtained during the MAE pre-training and the linear probing accuracy, which evaluates the learned representations, are shown below:
 
 <div style="text-align: center;">
-  <img src="figures/prediction.png" alt="Descriptive text" width="700">
+  <img src="./figures/pretraining_loss_curve.png" alt="Pre-training Loss Curve" width="400">
 </div>
 
-**Classification results**
+Below is a comparison showcasing how our model reconstructs an image using its learned representations. The original image is on the left, the masked original image is in the center, and the reconstructed version by our model is on the right.
 
-We have obtained a Top 1 test accuracy : **92.61 %**
+<div style="text-align: center;">
+  <img src="./figures/pretraining_pred_img.png" alt="Image Reconstruction Comparison" width="700">
+</div>
 
-( train - 60,000 images , val - 9,000 images , test - 18000 iamges )
+---
 
+**Finetuning Pre-trained MAE-encoder for classifiation**
 
+We achieved a **Top-1 Test Accuracy of 92.61%** ( Train-Validation-Test split 70-10-20 ) . Below are the ROC curve and the training-validation accuracy curves:
 
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="./figures/taskVIA_roc_curve.png" alt="ROC Curve" width="45%">
+  <img src="./figures/taskVIA_training_metrics.png" alt="Training-Validation Metrics" width="70%">
+</div>
 
+---
 
+**Finetuning Pre-trained MAE-encoder for super resolution**
 
-
-
-
-
-
+---
 
 ### **5. Discussion**
 
