@@ -34,12 +34,14 @@ pip install -r requirements.txt
 
 ### **4. Results**
 
+**Pre-training results**
+
 Loss curve obtained during pre-training MAE and, linearprobing accuracy which is used to evaluvate the learned representations are shown below,
 
-<div style="display: flex; align-items: flex-start;">
+<div style="display: flex; justify-content: center; align-items: flex-start;">
   <!-- Image Section -->
   <div style="margin-right: 20px;">
-    <img src="/figures/loss_curve.png" alt="Loss Curve" width="300">
+    <img src="./figures/loss_curve.png" alt="Loss Curve" width="300">
   </div>
 
   <!-- Table Section -->
@@ -72,6 +74,7 @@ Loss curve obtained during pre-training MAE and, linearprobing accuracy which is
     </table>
   </div>
 </div>
+
 
 We've set up a side-by-side comparison to show how our model rebuilds an image using its learned representations. On the left, you'll see the original image, and on the right is the model's reconstructed version, and in the middle is the masked original image.
 
