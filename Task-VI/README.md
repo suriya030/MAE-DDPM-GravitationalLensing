@@ -46,15 +46,18 @@ For implimentation details refer the notebook.
 
 The loss curve obtained during the MAE pre-training and the linear probing accuracy, which evaluates the learned representations, are shown below:
 
-<div style="text-align: center;">
+<p align="center">
   <img src="./figures/pretraining_loss_curve.png" alt="Pre-training Loss Curve" width="400">
-</div>
+</p>
+
+
 
 Below is a comparison showcasing how our model reconstructs an image using its learned representations. The original image is on the left, the masked original image is in the center, and the reconstructed version by our model is on the right.
 
-<div style="text-align: center;">
+<p align="center">
   <img src="./figures/pretraining_pred_img.png" alt="Image Reconstruction Comparison" width="700">
-</div>
+</p>
+
 
 **Note:** Artifacts in the unmasked regions of the **Predicted Reconstruction** arise because the loss function penalizes only the reconstruction of masked patches.
 
@@ -65,10 +68,17 @@ Below is a comparison showcasing how our model reconstructs an image using its l
 
 We achieved a **Top-1 Test Accuracy of 92.61%** ( Train-Validation-Test split 70-10-20 ) . Below are the ROC curve and the training-validation accuracy curves:
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="./figures/taskVIA_roc_curve.png" alt="ROC Curve" width="45%">
-  <img src="./figures/taskVIA_training_metrics.png" alt="Training-Validation Metrics" width="70%">
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <img src="./figures/taskVIA_roc_curve.png" alt="ROC Curve" width="400">
+    </td>
+    <td align="center">
+      <img src="./figures/taskVIA_training_metrics.png" alt="Training-Validation Metrics" width="600">
+    </td>
+  </tr>
+</table>
+
 
 ---
 
@@ -83,9 +93,9 @@ We propose a model leveraging a pretrained MAE encoder as a deep feature extract
 
 Below is an example illustrating how our model performs super-resolution on an image.
 
-<div style="text-align: center;">
+<p align="center">
   <img src="./figures/taskIVB_prediction.png" alt="Image Reconstruction Comparison" width="700">
-</div>
+</p>
 
 
 
