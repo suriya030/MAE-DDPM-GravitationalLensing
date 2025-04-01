@@ -1,6 +1,6 @@
 # Google summer of code evaluation test
 
-I am interested in contributing to the following projects,
+I am interested in contributing to the following DeepLense projects,
 1) Diffusion Models for Gravitational Lensing Simulation
 2) Foundational model for Gravitational lensing
 
