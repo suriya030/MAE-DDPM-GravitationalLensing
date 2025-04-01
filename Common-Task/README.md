@@ -12,13 +12,8 @@ pip install -r requirements.txt
 **NOTE** : Compatible versions of CUDA toolkit and CuDNN should be downloaded for GPU support. 
 
 ## **2. Usage**
-```common-task.ipynb``` contains all the necessary scripts for training, and inference. Notebook is organised into multiple SECTIONS as given below:
+```common-task.ipynb``` contains all the necessary scripts for training, and inference.
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/bae9404c-24eb-414e-83d5-b329f1672150" width="400" alt="Code snippet" style="margin-right:40%;">
-</p>
-
-- For **training and inference** (from scratch): Run **SECTIONS 1, 2, 3, 4 and 5** (Refer above figure).
 
 ## 3. **Dataset and Model**
 

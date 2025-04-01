@@ -59,10 +59,10 @@ To evaluate image quality, we generated **10,000 images** and compared them agai
 - **Test dataset** (1,000 images)
 
 
-| Model | Dataset Comparison | FID Score ↓ |
-|-------|--------------------|-------------|
-| **DDPM** | Train vs. Generated | <span style="color: green;"><strong>10.53</strong></span> |
-| **DDPM** | Test vs. Generated | <span style="color: green;"><strong>11.65</strong></span> |
+    | Model | Dataset Comparison | FID Score ↓ |
+    |-------|--------------------|-------------|
+    | **DDPM** | Train vs. Generated | <span style="color: green;"><strong>10.53</strong></span> |
+    | **DDPM** | Test vs. Generated | <span style="color: green;"><strong>11.65</strong></span> |
 
 Here is the [link](https://iitracin-my.sharepoint.com/:f:/g/personal/r_ss_ee_iitr_ac_in/Ek4Y-HB_YWlPg60wpr8ELJgBIN1TsmuKk_77JpMbDrQluQ?e=01nsrr) to 10,000 generated images.
 
