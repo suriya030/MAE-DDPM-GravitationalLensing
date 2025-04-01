@@ -16,14 +16,14 @@ pip install -r requirements.txt
 
 ### **2. Usage**
 
-- For **training** (from scratch): Run ```ddpm-training.ipynb```.  
-  **Note**: Download the folder named 'dataset' from the [🚨drive🚨]() and place it at ```\Evaluation-test\Task-IV```.
+- **Training** (from scratch): Run ```ddpm-training.ipynb```.  
+  **Note**: Download the folder named 'dataset' from the [drive](https://iitracin-my.sharepoint.com/:f:/g/personal/r_ss_ee_iitr_ac_in/EmkNdJL1qOhIn7ZBi0X1bZkBZVwbJTloaQoWiCkZ_88qeg?e=4g1yJW) and place it at ```\Evaluation-test\Task-IV```.
     
-- For **generating new samples**: Run ```ddpm-generate-images.ipynb```.  
+- **Generating new samples**: Run ```ddpm-generate-images.ipynb```.  
   **Note**: Trained DDPM model Checkpoint should be present at `.\Evaluation-test\Task-IV\default\`, by default I have included my trained DDPM model checkpoint there `ddpm_ckpt.pth`.
     
-- For **FID score calculation**: Run ```ddpm-fid-calculation.ipynb``` 
-  **Note**: Trained DDPM model Checkpoint should be present at `.\Evaluation-test\Task-IV\default\`, by default I have included my trained DDPM model checkpoint there `ddpm_ckpt.pth`. Also, download the folder named 'generated_images' from the [🚨drive🚨]() and place it at `.\Evaluation-test\Task-IV\default\`.
+- **FID score calculation**: Run ```ddpm-fid-calculation.ipynb``` 
+  **Note**: Trained DDPM model Checkpoint should be present at `.\Evaluation-test\Task-IV\default\`, by default I have included my trained DDPM model checkpoint there `ddpm_ckpt.pth`. Also, download the folder named 'generated_images' from the [drive](https://iitracin-my.sharepoint.com/:f:/g/personal/r_ss_ee_iitr_ac_in/Ek4Y-HB_YWlPg60wpr8ELJgBIN1TsmuKk_77JpMbDrQluQ?e=hQQFTn) and place it at `.\Evaluation-test\Task-IV\default\`.
 
 ---
 
@@ -64,6 +64,7 @@ To evaluate image quality, we generated **10,000 images** and compared them agai
 | **DDPM** | Train vs. Generated | <span style="color: green;"><strong>10.53</strong></span> |
 | **DDPM** | Test vs. Generated | <span style="color: green;"><strong>11.65</strong></span> |
 
+Here is the [link](https://iitracin-my.sharepoint.com/:f:/g/personal/r_ss_ee_iitr_ac_in/Ek4Y-HB_YWlPg60wpr8ELJgBIN1TsmuKk_77JpMbDrQluQ?e=01nsrr) to 10,000 generated images.
 
 ## **5. Discussion**
 
